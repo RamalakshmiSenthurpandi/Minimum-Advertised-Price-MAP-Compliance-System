@@ -1,9 +1,9 @@
 # Minimum-Advertised-Price-MAP-Compliance-System
-Python-based MAP Compliance Pipeline for automated pricing policy validation, seller compliance monitoring, and violation report generation using modular data processing.
+Python-based MAP Compliance Pipeline for automated pricing policy validation, seller compliance monitoring and violation report generation using modular data processing.
 
 ## Project Overview
 
-This project automates the detection of Minimum Advertised Price (MAP) violations by processing multiple product and seller datasets. It consolidates pricing information, validates compliance rules, identifies violations, and generates reports for business teams.
+This project automates the detection of Minimum Advertised Price (MAP) violations by processing multiple product and seller datasets. It consolidates pricing information, validates compliance rules, identifies violations and generates reports for business teams.
 
 ---
 
