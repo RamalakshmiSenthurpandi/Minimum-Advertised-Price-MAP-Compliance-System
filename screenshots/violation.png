@@ -1,1 +1,24 @@
+MAP POLICY VIOLATION REPORT
+============================================================
+Seller Name :  *******
+
+SUMMARY
+------------------------------------------------------------
+Total Violations : 90
+HIGH   : 90
+MEDIUM : 0
+LOW    : 0
+
+VIOLATION DETAILS
+------------------------------------------------------------
+SKU              : *******
+Product Line     : *******
+Brand            : *******
+Category         : 
+Subcategory      : *******
+MAP Price        : 2384.99
+Advertised Price : 1723.68
+Difference       : 661.31
+Violation %      : 27.73%
+Severity         : HIGH
 
