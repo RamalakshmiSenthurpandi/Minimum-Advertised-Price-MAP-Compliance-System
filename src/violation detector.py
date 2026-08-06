@@ -1,1 +1,1 @@
-
+detect_violations()
