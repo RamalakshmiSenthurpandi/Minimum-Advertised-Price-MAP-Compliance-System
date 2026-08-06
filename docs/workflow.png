@@ -1,1 +1,71 @@
-
+                                        ┌──────────────────────────┐
+                                        │      INPUT SOURCES       │
+                                        └──────────────────────────┘
+                                                     │
+         ┌─────────────────┬────────────────┬────────────────┬──────────────────┐
+         │                 │                │                │
+         ▼                 ▼                ▼                ▼
+ ┌──────────────┐  ┌──────────────┐  ┌─────────────┐  ┌────────────────┐
+ │ PL Table     │  │ SKU Table    │  │ LPP Logic   │  │ Seller Data    │
+ │ (JSON)       │  │ (XML)        │  │ (Excel)     │  │ (Excel / CSV)  │
+ └──────────────┘  └──────────────┘  └─────────────┘  └────────────────┘
+                            │
+                            ▼
+                 ┌─────────────────────────┐
+                 │     Data Loader         │
+                 │ • Read JSON             │
+                 │ • Read XML              │
+                 │ • Read Excel            │
+                 └─────────────────────────┘
+                            │
+                            ▼
+                ┌──────────────────────────┐
+                │    Data Preprocessing    │
+                │ • Missing Values         │
+                │ • Rename Columns         │
+                │ • Standardization        │
+                │ • Remove Duplicates      │
+                └──────────────────────────┘
+                            │
+                            ▼
+                ┌──────────────────────────┐
+                │   Data Integration       │
+                │ • Merge using SKU        │
+                │ • Join Product Data      │
+                │ • Join Seller Data       │
+                └──────────────────────────┘
+                            │
+                            ▼
+               ┌────────────────────────────┐
+               │ Business Rule Validation   │
+               │                            │
+               │ ✓ MAP Price Check          │
+               │ ✓ Discount Check           │
+               │ ✓ Region Validation        │
+               └────────────────────────────┘
+                            │
+                            ▼
+                ┌──────────────────────────┐
+                │ Violation Detection      │
+                │ • MAP Violation          │
+                │ • Discount Violation     │
+                │ • Region Violation       │
+                │ • Severity Assignment    │
+                └──────────────────────────┘
+                            │
+                            ▼
+               ┌────────────────────────────┐
+               │ Report Generation          │
+               │ • Violation Report         │
+               │ • Seller Summary           │
+               │ • Compliance Report        │
+               └────────────────────────────┘
+                            │
+                            ▼
+              ┌──────────────────────────────┐
+              │        FINAL OUTPUT          │
+              │                              │
+              │ ✔ MAP Compliance Report      │
+              │ ✔ Seller-wise Report         │
+              │ ✔ Violation Summary          │
+              └──────────────────────────────┘
