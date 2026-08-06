@@ -1,1 +1,71 @@
-
+                                    +----------------------+
+                                    |   Input Data Sources |
+                                    +----------------------+
+                                              |
+          -----------------------------------------------------------------
+          |                      |                     |                   |
+          |                      |                     |                   |
++--------------------+  +--------------------+  +----------------+  +----------------------+
+| PL Table           |  | SKU Table          |  | LPP Logic      |  | Seller Marketplace   |
+| (JSON)             |  | (XML)              |  | Table (Excel)  |  | Data (Excel/CSV)     |
++--------------------+  +--------------------+  +----------------+  +----------------------+
+          \                  |                      |                     /
+           \                 |                      |                    /
+            \________________|______________________|___________________/
+                                     |
+                                     v
+                        +----------------------------+
+                        |      Data Loader Module    |
+                        |  - Read JSON              |
+                        |  - Read XML               |
+                        |  - Read Excel             |
+                        +----------------------------+
+                                     |
+                                     v
+                        +----------------------------+
+                        |   Data Preprocessing       |
+                        | - Handle Missing Values    |
+                        | - Rename Price Columns     |
+                        | - Data Cleaning            |
+                        | - Standardization          |
+                        +----------------------------+
+                                     |
+                                     v
+                        +----------------------------+
+                        |     Data Integration       |
+                        | - Merge using SKU          |
+                        | - Join Product & Seller    |
+                        | - Validate Records         |
+                        +----------------------------+
+                                     |
+                                     v
+                        +----------------------------+
+                        | Business Rule Engine       |
+                        |                            |
+                        | ✓ MAP Violation            |
+                        | ✓ Discount Violation       |
+                        | ✓ Region Validation        |
+                        +----------------------------+
+                                     |
+                                     v
+                        +----------------------------+
+                        | Violation Detection Module |
+                        | - Severity Assignment      |
+                        | - Compliance Status        |
+                        +----------------------------+
+                                     |
+                                     v
+                        +----------------------------+
+                        | Report Generator           |
+                        | - Excel Report             |
+                        | - Summary Report           |
+                        | - Seller Report            |
+                        +----------------------------+
+                                     |
+                                     v
+                        +----------------------------+
+                        | Final Output               |
+                        | • Violation Report         |
+                        | • Seller Compliance        |
+                        | • Business Insights        |
+                        +----------------------------+
