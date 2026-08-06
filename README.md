@@ -1,5 +1,5 @@
 # Minimum-Advertised-Price-MAP-Compliance-System
-# MAP Compliance Pipeline
+Python-based MAP Compliance Pipeline for automated pricing policy validation, seller compliance monitoring, and violation report generation using modular data processing.
 
 ## Project Overview
 
