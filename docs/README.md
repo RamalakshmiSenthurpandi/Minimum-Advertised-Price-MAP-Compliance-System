@@ -1,6 +1,6 @@
-**## System Architecture
+## System Architecture
 
-![Architecture](docs/Architecture.png)**
+![Architecture](docs/Architecture.png)
 
 ## Workflow
 
